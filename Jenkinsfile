@@ -15,11 +15,11 @@ pipeline {
         }
         
 		
-		stage('Testing step') { 
+		stage('Build step') { 
             steps {
                 
 				withMaven(jdk: 'JDK8', maven: 'M2') {
-              bat 'mvn test'
+              bat 'mvn clean install'
             }
 				
 				
