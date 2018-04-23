@@ -5,7 +5,7 @@ pipeline {
             steps {
                 
 				withMaven(jdk: 'JDK8', maven: 'M2') {
-              sh 'mvn clean compile'
+              bat 'mvn clean compile'
             }
 				
 				
