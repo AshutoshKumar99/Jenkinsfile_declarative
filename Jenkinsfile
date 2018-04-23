@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'master'
+    label 'flower'
   }
     stages {
         stage('compile step') { 
